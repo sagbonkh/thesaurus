@@ -1,19 +1,37 @@
 import './App.css';
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/pages/Home';
+// import bgImage from './assets/videos/video1.mp4'
 
-function App() {
-  return (
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HeroSection from './components/HeroSection';
+
+// export default function App() {
+//   return (
+//     <>
+//       <Router>
+//         {/* <Navbar /> */}
+//         <HeroSection />
+//         <Routes>
+//           <Route path='/' exact component={Home} />
+//         </Routes>
+//       </Router>
+//     </>
+//   );
+// }
+
+
+import Main from './components/Main';
+export default function App() {
+  return(
     <>
       <Router>
         <Navbar />
-        <Routes>
-          <Route path='/' exact />
-        </Routes>
+        <HeroSection />
+        {/* <Route path = '/' exact component={Home} /> */}
       </Router>
     </>
   );
 }
 
-export default App;
