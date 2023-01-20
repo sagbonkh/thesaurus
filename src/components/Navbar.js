@@ -6,6 +6,7 @@ import './Navbar.css'
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const [navbar, setNavbar] = useState(false);
   
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -23,9 +24,19 @@ function Navbar() {
   }, []);
 
   window.addEventListener('resize', showButton);
+
+  const changeBackground = () => {
+    if(window.scrollY >= 80){
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  }
+  window.addEventListener('scroll', changeBackground);
+
   return (
     <>
-      <nav className='navbar'>
+      <nav className= {navbar ? 'navbar active' : 'navbar'}>
           <div className='navbar-container'>
               <Link to= '/' className='navbar-logo' onClick={closeMobileMenu}>
                 Thesaurus 
@@ -35,27 +46,32 @@ function Navbar() {
               </div>
               <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'>
-                  <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                    Home
+                  <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                    About
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                    Services
+                  <Link to='/models' className='nav-links' onClick={closeMobileMenu}>
+                    Models
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                    Products
+                  <Link to='/designers' className='nav-links' onClick={closeMobileMenu}>
+                    Designers
                   </Link>
                 </li>
+                  <li className='nav-item'>
+                    <Link to='/travel' className='nav-links' onClick={closeMobileMenu}>
+                      Travel
+                    </Link>
+                  </li>
                 <li>
                   <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
                     Sign up
                   </Link>
                 </li>
               </ul>
-              {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+              {button && <Button buttonStyle='btn--outline'>Sign up</Button>}
           </div>
       </nav>
     </>

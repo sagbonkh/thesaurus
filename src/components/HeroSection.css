@@ -19,17 +19,27 @@ video {
   }
   
   .hero-container > h1 {
-    color: #fff;
-    font-size: 100px;
+    color: #f5f5dc;
+    font-size: 24px;
     margin-top: -100px;
   }
-  
+
+  .hero-container > h2 {
+    color: #f5f5dc;
+    font-size: 25px;
+    margin-top: 8px;
+  }
+
+  .hero-container > h3 {
+    color: #f5f5dc;
+    font-size: 20px;
+    margin-top: 8px;
+  }
+
   .hero-container > p {
     margin-top: 8px;
-    color: #fff;
-    font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
+    color: #f5f5dc;
+    font-size: 15px;
   }
   
   .hero-btns {
@@ -58,7 +68,7 @@ video {
     }
   
     .hero-container > p {
-      font-size: 30px;
+      font-size: 15px;
     }
   
     .btn-mobile {
