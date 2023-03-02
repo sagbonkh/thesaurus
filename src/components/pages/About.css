@@ -21,7 +21,6 @@ img {
 .about-text{
     width: 400px;
     padding-left: 50px;
-    height: 30vh;
     font-size: 16px;
     float: left;
     flex-shrink: 0;

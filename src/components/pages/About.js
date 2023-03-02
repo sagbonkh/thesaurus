@@ -9,13 +9,15 @@ function About() {
         <img src= {aboutImg} alt='about' width="500" height="500"/>
       </div>
       <div className='about-text'>
-        <h2>About</h2>
+        <h3>About</h3>
           <p>
-              Sidney Agbonkhese's passion project, Thesaurus, is an expression of his love
-              for simple style and artistic creativity. On the page, he offers a unique 
-              collection of images that showcase his personalized take on fashion and design.
-              Through Thesaurus he has been able to explore different aspects of fashion while
-              expanding on how we think about art in general.  
+              Thesaurus is an expression of love for simple style and artistic creativity. 
+              This page offers a unique collection of images that showcase our personalized 
+              take on fashion and design.
+              Through Thesaurus we explore different aspects of fashion while
+              expanding on how we think about art in general. The goal of this project is to 
+              educate readers on the ever-evolving world of streetwear fashion so they can make
+              informed decisions when it comes to their fashion choices.
           </p>
       </div>  
     </div>

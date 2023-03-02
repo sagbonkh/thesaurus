@@ -12,23 +12,23 @@ export default function HeroSection() {
       </video>
       <h2>Discover your style</h2>
       <p> <DateTime></DateTime> </p>
-      <div className='hero-btns'>
-          <Button
+      {/* <div className='hero-btns'>
+          {/* <Button
             className='btns'
             buttonStyle='btn--outline'
             buttonSize='btn--large'
           >
             Get Started
-          </Button>
-          <Button
+          </Button> */}
+          {/* <Button
             className='btns'
             buttonStyle='btn--primary'
             buttonSize='btn--large'
             onClick={console.log('hey')}
           >
             Watch Trailer <i className='far fa-play-circle' />
-          </Button>
-        </div>
+          </Button> 
+        </div> */}
     </div>
   );
 }
